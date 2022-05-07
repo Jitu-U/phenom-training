@@ -1,4 +1,4 @@
-#Topics covered 
+# Topics covered 
 
 1.	Single Processor & Multi Processors
 2.	Process Scheduling at Processor  - Fundamentals
