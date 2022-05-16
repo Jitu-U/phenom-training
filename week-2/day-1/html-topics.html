@@ -1,0 +1,167 @@
+<!-- Basic HTML File structure-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head tag which contains the meta information about the web page-->
+
+<head>
+    <title>Basic HTML page</title>
+    <meta name="description" content="This is Description">
+    <meta name="author" content="Jitesh Gamit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!---The Style Element-->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            min-width: 100px;
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            margin: 100px;
+        }
+        input, textarea, select, label{
+            margin: 5px;
+        }
+        input[type="submit"]{
+            color: white;
+            background-color: blue;
+            border: none;
+        }
+    </style>
+</head>
+
+<!--Main content which is displayed in the web page -->
+
+<body>
+    <!-- Block level Div ELement And Attributes-->
+    <div class="main container">
+
+        <!--Image-->
+        <img src="data:image/png;base64,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"
+            alt="Phenom Logo" />
+        <!---Heading Element-->
+        <h1 style="background-color: rgba(0,0,0,0.2)"> Big Heading </h1>
+        <h2>small heading</h2>
+        <h3>Smaller Heading</h3>
+        <!-- HTML Paragraphs-->
+        <h3 id="para-head">Paragraphs</h3>
+        <p>
+            Lorem Ipsum is simply
+            dummy text of the printing
+            and typesetting industry. Lorem Ipsum has been the industry's <br>
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make a type specimen book.
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+            Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+            of Lorem Ipsum.
+        </p>
+        <h3>Formatted Text</h3>
+        <pre>
+            Lorem Ipsum is simply dummy
+            text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy
+             text ever since the 1500s, when an unknown printer
+              took a galley of type and scrambled it to make a type 
+              specimen book. It has survived not only five centuries, 
+              but also the leap into electronic typesetting, remaining essentially unchanged.
+               It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                and more recently with desktop publishing software like Aldus
+                 PageMaker including versions of
+                 Lorem Ipsum.
+        </pre>
+
+        <!---HTML TABLES-->
+        <table>
+            <tr>
+                <th colspan="2">Col 1</th>
+
+                <th> Col 2</th>
+            </tr>
+            <tr>
+                <td>one</td>
+                <td>two</td>
+                <td>three</td>
+            </tr>
+            <tr>
+                <td>one</td>
+                <td>two</td>
+                <td>three</td>
+            </tr>
+            <tr>
+                <td>one</td>
+                <td>two</td>
+                <td>three</td>
+            </tr>
+            <tr>
+                <td>one</td>
+                <td>two</td>
+                <td>three</td>
+            </tr>
+            <tr>
+                <td>one</td>
+                <td>two</td>
+                <td>three</td>
+            </tr>
+        </table>
+
+        <!---HTML Lists-->
+        <ul>
+            <li>
+                <ol>
+                    <li>el 1</li>
+                    <li>el 2</li>
+                    <li>el 3</li>
+                </ol>
+            </li>
+
+            <li>
+                Ol element
+            </li>
+        </ul>
+
+        <!--HTML form-->
+        <form>
+            <h3>A Simple Form</h3>
+            <label>Name</label>
+            <input type="text" placeholder="Name" value=""/>
+            <label >Number</label>
+            <input type="number" placeholder="Number" value=""/>
+            <label>Select your Car</label>
+            <select id="cars" name="cars" >
+                <option value="Mercedece">Mercedece</option>
+                <option value="Tesla">Tesla</option>
+                <option value="Ferrari">Ferrari</option>
+                <option value="audi">Audi</option>
+              </select>
+
+              <label for="textarea">
+                  Message
+              </label>
+              <textarea name="text area" id="area" cols="30" rows="10">
+
+              </textarea>
+              <input type="submit"/>
+        </form>
+    </div>
+</body>
+
+</html>
