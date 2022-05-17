@@ -4,11 +4,5 @@
 - [ ] 	Colors, Borders, Background, margins, padding.																								
 - [ ] 	Working with core concepts of CSS																								
 - [ ] 	Box/Model,Outline,Fonts,Links,Lists,Tables,Combinations																								
-- [ ] 	CSS Flex model																								
-- Introduction to JavaScript																									
-- [ ] 	Scripting Languages and their usage																								
-- [ ] 	Getting Started with JavaScript.																								
-- [ ] 	History of JavaScript																								
-- [ ] 	Variable																								
-- [ ] 	Data types																								
-- [ ] 	Real time examples		
+- [ ] 	CSS Flex model	
+	
