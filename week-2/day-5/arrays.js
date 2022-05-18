@@ -99,3 +99,44 @@ console.log(concatArray.join(' '));
 ///arr.map() : does the opreation on each element and returns a new array
 console.log(concatArray.map( x => x+40));
 
+///arr.reduce() : executes a user-supplied "reducer" callback function on each element of the array, in order, 
+///passing in the return value from the calculation on the preceding element. The final result of running the 
+///reducer across all elements of the array is a single value. 
+
+let A = [1,3,4,5.5, 5,6 ,78 ];
+console.log( A.reduce( (prev,curr) => prev+curr)); //This adds up all elements value
+
+
+///Arr.reverse() : reverses the array, Modifies the array
+A.reverse()
+console.log(A);
+
+
+/// arr.shift() : removes the first element
+A.shift();
+console.log(A);
+
+
+///arr.slice(start,end) : returns a small portion of array from start to end
+console.log(A.slice(0,2));
+console.log(A.slice(1,4));
+
+///arr.sort() : sorts an array
+/// You can also pass a sorting function to sort()
+
+console.log("Sorted Array: " + A.sort());
+
+///Insert element or replace ar any index in an array 
+
+A.splice(3,0,45,67); //inserts two elements at 3rd position
+console.log(A);
+
+A.splice(3,2); //removes 2 elements from pos 3
+console.log(A);
+
+
+/// arr.unsift() : adds element at start
+
+A.unshift(3);
+console.log(A);
+
