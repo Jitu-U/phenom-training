@@ -5,5 +5,6 @@ Working with Functions
 -	Function Scope																								
 -	Nested Functions																								
 -	First class functions																								
--	IIFE																								
+-	IIFE	
+																							
 -	Real time examples	
