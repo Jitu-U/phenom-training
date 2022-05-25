@@ -1,0 +1,25 @@
+{
+  "name": "phenom-training",
+  "version": "1.0.0",
+  "description": "training modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jitu-U/phenom-training.git"
+  },
+  "keywords": [
+    "phenom-training"
+  ],
+  "author": "Jitesh Gamit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jitu-U/phenom-training/issues"
+  },
+  "homepage": "https://github.com/Jitu-U/phenom-training#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
