@@ -52,20 +52,51 @@ example in [bootstrap.html](./bootstrap.html)
 
 ##	Alerts
 
-You can use `alert` 
+You can use `alert-...`
+
+example `alert-success`       
+you can also add `alert-link` property to change style od links added in alerts.
+
+## Buttons	
+
+You can add Customisable bootstrap buttons in your web for easy edit and access.
+
+Buttons : `btn` class 
+
+add optioins as in : `btn-primary` , `btn-secondary`, `btn-success`
+
+You can check more classes [here](https://getbootstrap.com/docs/5.2/components/buttons/#content).
+
+## Button Groups	
+
+Wrap a series of buttons with 	`.btn` in `.btn-group`.	
+
+[example](./bootstrap.html).
+1.  Basic button group 
+2. checkbox version
+3. Nested 
 
 
-	Buttons																								
-	Button Groups																								
-	Badges, ProgressBars																								
-	Pagination																								
-	Dropdowns																								
-	Navs,Navbar																								
-	Forms, Input																								
-	Carousel																								
-	Modal																								
-	Tooltip																								
-	Popover																								
-	An application using Bootstrap 4																								
-	"Create a page using below mockup
-https://phenompeople.invisionapp.com/console/share/EFYDR7AW9JU/625975301"
+
+## Badges, ProgressBars		
+
+  Badges uses relative text size.
+	example in `bootstrap.html`
+
+### Progress Bar 
+
+we use `progress` class to wrap the max value 
+
+and `progress-bar` to manage the progress inside.
+
+[example](./bootstrap.html)
+
+You can use `.progress-bar-animated` to use animated progress bar
+
+## Pagination		
+
+we can add pagination page navogation usonh `.pagination` class and linked wrapped inside it
+
+
+																						
+	
