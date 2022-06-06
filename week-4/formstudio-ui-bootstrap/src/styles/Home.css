@@ -1,0 +1,18 @@
+.nav-col {
+    display: flex;
+    height: 100%;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.nav-col-list{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.side-nav{
+    height: 100vh;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
