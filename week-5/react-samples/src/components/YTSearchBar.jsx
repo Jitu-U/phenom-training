@@ -12,13 +12,13 @@ function YTSearchBar() {
 
 
     const handleSearch = async () => {
-      if(searchField || searchField === ""){
+      if(searchField || searchField !== ""){
         let data = await search(searchField);
         console.log(data);
         await store.dispatch(apiResponseRecieved(data.items));
         console.log(store.getState());
       } else{
-        console.log('Search empty');
+        alert("Empty Search Field")
       }
       
   }

@@ -1,6 +1,8 @@
 import './VideoCard.scss'
 import React from 'react'
 
+
+/// Using Component Props to fill UI
 function VideoCard(props) {
   return (
     <div className='v-card-container'>
