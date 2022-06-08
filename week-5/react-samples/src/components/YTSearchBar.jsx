@@ -14,9 +14,14 @@ function YTSearchBar() {
     const handleSearch = async () => {
       if(searchField || searchField !== ""){
         let data = await search(searchField);
-        console.log(data);
-        await store.dispatch(apiResponseRecieved(data.items));
-        console.log(store.getState());
+        if(data.error){
+          console.log(`ERROR: ${data.error.code} \n${data.error.message}`);
+          alert(`ERROR: ${data.error.code}\nUnable to get the results`)
+        } else{
+          console.log(data);
+          await store.dispatch(apiResponseRecieved(data.items));
+          console.log(store.getState());
+        }
       } else{
         alert("Empty Search Field")
       }
