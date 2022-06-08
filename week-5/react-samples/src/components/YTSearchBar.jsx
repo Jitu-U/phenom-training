@@ -12,7 +12,7 @@ function YTSearchBar() {
 
 
     const handleSearch = async () => {
-      if(searchField){
+      if(searchField || searchField === ""){
         let data = await search(searchField);
         console.log(data);
         await store.dispatch(apiResponseRecieved(data.items));
@@ -24,10 +24,12 @@ function YTSearchBar() {
   }
 
   //Dynamic Search
-    useEffect(()=>{
+/*    useEffect(()=>{
       handleSearch();
     }
       ,[searchField])
+*/
+
 
   return (
     <div className="search-container">
