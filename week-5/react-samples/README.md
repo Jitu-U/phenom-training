@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# React - Redux Project
+
+this project is created using React and for state management Redux is used.
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
