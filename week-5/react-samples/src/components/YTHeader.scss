@@ -1,0 +1,31 @@
+.yt-header{
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    overflow: hidden;
+    image-rendering: optimizeSpeed;
+    
+
+    .yt-logo{
+        overflow: hidden;
+        align-items: center;
+        justify-items: center;
+        height: 100%;
+        .yt-logo-link{
+            height: 100%;
+            .yt-logo-img{
+                object-fit: contain;
+                height: inherit;
+                width: auto;
+            }
+            span{
+                display: flex;
+            }
+        }
+    }
+}
