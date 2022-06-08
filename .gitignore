@@ -3,3 +3,5 @@
 /node_modules
 
 /week-4/formstudio-bootstrap/node_modules
+
+.env
