@@ -10,7 +10,7 @@ function Youtube() {
         <YTHeader/>
         <div className="results-container">
         {
-          //Using .map to create list of components
+          //  Using .map to create list of components
           // Also added component Key 
           // Rendering Video List Items
           useSelector(store=> store.filter( obj => obj.id.kind === "youtube#video")).map( vid => <VideoCard key={vid.id.videoId} title={vid.snippet.title} published={vid.snippet.publishedAt.slice(0,10)}  description={vid.snippet.description} imgSrc={vid.snippet.thumbnails.medium.url} channelName={vid.snippet.channelTitle}></VideoCard>)
