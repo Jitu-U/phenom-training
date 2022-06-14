@@ -9,23 +9,28 @@ function YTSearchBar() {
     const [searchField,setSearchField] = useState('');
 
 
+    function handleKeyDown(e) {
+    if (e.key === 'Enter') {
+      handleSearch(searchField)
+    }
+  }
 
 
-    const handleSearch = async () => {
-      if(searchField || searchField !== ""){
-        let data = await search(searchField);
-        if(data.error){
-          console.log(`ERROR: ${data.error.code} \n${data.error.message}`);
-          alert(`ERROR: ${data.error.code}\nUnable to get the results`)
-        } else{
-          console.log(data);
-          await store.dispatch(apiResponseRecieved(data.items));
-          console.log(store.getState());
-        }
-      } else{
-        alert("Empty Search Field")
+    async function handleSearch() {
+    if (searchField || searchField !== "") {
+      let data = await search(searchField)
+      if (data.error) {
+        console.log(`ERROR: ${data.error.code} \n${data.error.message}`)
+        alert(`ERROR: ${data.error.code}\nUnable to get the results`)
+      } else {
+        console.log(data)
+        await store.dispatch(apiResponseRecieved(data.items))
+        console.log(store.getState())
       }
-      
+    } else {
+      alert("Empty Search Field")
+    }
+
   }
 
   //Dynamic Search
@@ -38,8 +43,8 @@ function YTSearchBar() {
 
   return (
     <div className="search-container">
-        <input type="text" value={searchField} onChange={ (e)=> setSearchField(e.target.value)} placeholder="Search youtube" />
-        <button className="submit" onClick={handleSearch}>
+        <input type="text" value={searchField} onChange={ (e)=> setSearchField(e.target.value)} placeholder="Search youtube" onKeyDown={handleKeyDown}/>
+        <button className="submit" onClick={handleSearch} >
             <IoMdSearch size={20}/>
         </button>
    </div>
